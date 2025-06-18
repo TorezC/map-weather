@@ -2,8 +2,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import type { City } from '../types';
 
-mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN;
-console.log(import.meta);
+mapboxgl.accessToken = "pk.eyJ1IjoiZXhhbXBsZXMiLCJhIjoiY2lqbmpqazdlMDBsdnRva284cWd3bm11byJ9.V6Hg2oYJwMAxeoR9GEzkAA";
+
 
 
 type Props = {
@@ -63,7 +63,7 @@ const MapView: React.FC<Props> = ({ city }) => {
 export default MapView;
 
 
-const API_KEY = import.meta.env.VITE_OPENWEATHER_KEY;
+const API_KEY = "b1b15e88fa797225412429c1c50c122a1";
 const BASE_URL = 'https://api.openweathermap.org/data/2.5/forecast';
 
 export const getWeatherForecast = async (lat: number, lng: number): Promise<string> => {
